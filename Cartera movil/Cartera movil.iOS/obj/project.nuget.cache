@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "lf0sThRLYvs7op6u03tHrEhxLcqA+Vt6X80Dt0V9YlZBdlh5i2wvEVKxQoAruVXnzHd585J+SF1BcDtfjK9KvQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.iOS\\Cartera movil.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wirit\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\wirit\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\wirit\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
