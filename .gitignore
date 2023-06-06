@@ -22,3 +22,6 @@ Cartera movil/.vs/Cartera movil/v17/.suo
 *.dll
 *.pdb
 *.cache
+*.pdb
+Cartera movil/Cartera movil/obj/Debug/netstandard2.0/Cartera movil.dll
+Cartera movil/Cartera movil/obj/Debug/netstandard2.0/Cartera movil.pdb
