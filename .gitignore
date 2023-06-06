@@ -16,3 +16,6 @@ Cartera movil/Cartera movil.Android/obj/Debug/130/designtime/build.props
 Cartera movil/Cartera movil.Android/obj/Debug/130/Cartera movil.Android.csproj.AssemblyReference.cache
 Cartera movil/.vs/Cartera movil/v17/.suo
 *.dll
+*.cache
+*.dll
+*.cache

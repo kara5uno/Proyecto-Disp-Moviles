@@ -16,8 +16,10 @@ namespace Cartera_movil
         string wallet;
         public WalletPage(string userName, string walletName)
         {
+            user = userName;
+            wallet = walletName;
             InitializeComponent();
-
+            carteraActual.Text= wallet;
         }
     }
 }
