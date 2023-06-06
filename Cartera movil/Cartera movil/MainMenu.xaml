@@ -4,7 +4,9 @@
              x:Class="Cartera_movil.MainMenu">
     <StackLayout>
         <Label Text="Estas son tus carteras" />
-        <StackLayout x:Name="carteras"/>
+        <ScrollView>
+            <StackLayout x:Name="carteras"/>
+        </ScrollView>
         <Button Text="+" BackgroundColor="#34B208"
                 Clicked="CreateWallet" />
     </StackLayout>

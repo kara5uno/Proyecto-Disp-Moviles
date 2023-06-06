@@ -3,7 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cartera_movil.WalletPage">
     <StackLayout>
+        <Button Text="Regresar" Clicked="Return"/>
         <Label x:Name="carteraActual" Text="" />
-        <StackLayout x:Name="carteras"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Entry x:Name="agregar"/>
+            <Button Grid.Row="0"
+               Grid.Column="1"
+               Text="Ingresar dinero"
+               Clicked="EnterMoney"
+               />
+        </Grid>
+        <ScrollView>
+            <StackLayout x:Name="carteras"/>
+        </ScrollView>
     </StackLayout>
 </ContentPage>
