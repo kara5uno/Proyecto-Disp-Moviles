@@ -20,3 +20,25 @@ C:\Users\wirit\OneDrive\Escritorio\demat\desarollo disp moviles\proyecto final\P
 C:\Users\wirit\OneDrive\Escritorio\demat\desarollo disp moviles\proyecto final\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\refint\Cartera movil.dll
 C:\Users\wirit\OneDrive\Escritorio\demat\desarollo disp moviles\proyecto final\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.pdb
 C:\Users\wirit\OneDrive\Escritorio\demat\desarollo disp moviles\proyecto final\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\ref\Cartera movil.dll
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\bin\Debug\netstandard2.0\runtimes\win-x86\native\WebView2Loader.dll
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\bin\Debug\netstandard2.0\runtimes\win-x64\native\WebView2Loader.dll
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\bin\Debug\netstandard2.0\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\bin\Debug\netstandard2.0\Cartera movil.deps.json
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\bin\Debug\netstandard2.0\Cartera movil.dll
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\bin\Debug\netstandard2.0\Cartera movil.pdb
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.csproj.AssemblyReference.cache
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\MainMenu.xaml.g.cs
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\MoneyDeposit.xaml.g.cs
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\TransferMoney.xaml.g.cs
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\WithdrawMoney.xaml.g.cs
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.AssemblyInfoInputs.cache
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.AssemblyInfo.cs
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.csproj.CoreCompileInputs.cache
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.dll
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\refint\Cartera movil.dll
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.pdb
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\ref\Cartera movil.dll

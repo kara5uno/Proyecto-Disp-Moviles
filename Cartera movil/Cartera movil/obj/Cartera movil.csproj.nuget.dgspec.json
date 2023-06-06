@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj": {}
+    "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj": {
+    "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj",
+        "projectUniqueName": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj",
         "projectName": "Cartera movil",
-        "projectPath": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj",
+        "projectPath": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj",
         "packagesPath": "C:\\Users\\wirit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\obj\\",
+        "outputPath": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

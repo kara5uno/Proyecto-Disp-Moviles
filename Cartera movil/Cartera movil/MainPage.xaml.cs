@@ -19,7 +19,6 @@ namespace Cartera_movil
         {
             if (CheckUserInformation(userName.Text,password.Text))
             {
-                //si usuario y contrasena correcto
                 App.Current.MainPage = new MainMenu(userName.Text);
             }
             else
@@ -31,7 +30,7 @@ namespace Cartera_movil
 
         private bool CheckUserInformation(string userName, string password)
         {
-            //TODO: Regresa true si el usuario y contrasena son correctos
+            //TODO: Regresa true si el usuario y contrasena son correctos ALAN
             return true;
         }
 

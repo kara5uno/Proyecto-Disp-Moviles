@@ -8,7 +8,7 @@
         <Label Text="Inicie Sesion"/>
         <Entry x:Name="userName" Placeholder="Introduce tu nombre de usuario" />
         <Entry x:Name="password" Placeholder="Introduce tu contraseña" IsPassword="true" FontFamily="Password" />
-        <Button Text="IniciaSesion" Clicked="OnButtonClicked" />
+        <Button Text="Inicia Sesion" Clicked="OnButtonClicked" />
     </StackLayout>
 
 </ContentPage>

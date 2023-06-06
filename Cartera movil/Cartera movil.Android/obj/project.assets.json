@@ -3566,11 +3566,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.Android\\Cartera movil.Android.csproj",
+      "projectUniqueName": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.Android\\Cartera movil.Android.csproj",
       "projectName": "Cartera movil.Android",
-      "projectPath": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.Android\\Cartera movil.Android.csproj",
+      "projectPath": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.Android\\Cartera movil.Android.csproj",
       "packagesPath": "C:\\Users\\wirit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.Android\\obj\\",
+      "outputPath": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3591,8 +3591,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj": {
-              "projectPath": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj"
+            "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj": {
+              "projectPath": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj"
             }
           }
         }

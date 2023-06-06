@@ -1274,11 +1274,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.iOS\\Cartera movil.iOS.csproj",
+      "projectUniqueName": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.iOS\\Cartera movil.iOS.csproj",
       "projectName": "Cartera movil.iOS",
-      "projectPath": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.iOS\\Cartera movil.iOS.csproj",
+      "projectPath": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.iOS\\Cartera movil.iOS.csproj",
       "packagesPath": "C:\\Users\\wirit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.iOS\\obj\\",
+      "outputPath": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1299,8 +1299,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj": {
-              "projectPath": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj"
+            "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj": {
+              "projectPath": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil\\Cartera movil.csproj"
             }
           }
         }

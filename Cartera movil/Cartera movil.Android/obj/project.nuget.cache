@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zZ9uFJeJf6SQvO22QmM/5Kdh9PbeKmBevTvoFVz+sMWnTT7N4833emaNBWhFujngR02fWo2BND4wieP27iuA0g==",
+  "dgSpecHash": "7+70N9heQSgpKhq40SBWxbkBjZ0AyC897ZaUdgHa9lDkemJV11BpzSIlJiNnwGaq57UhnQMyfjEfS995F+mm/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wirit\\OneDrive\\Escritorio\\demat\\desarollo disp moviles\\proyecto final\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.Android\\Cartera movil.Android.csproj",
+  "projectFilePath": "C:\\Cartera movil\\Proyecto-Disp-Moviles\\Cartera movil\\Cartera movil.Android\\Cartera movil.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wirit\\.nuget\\packages\\microsoft.ui.xaml\\2.8.4\\microsoft.ui.xaml.2.8.4.nupkg.sha512",
     "C:\\Users\\wirit\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\microsoft.web.webview2.1.0.1264.42.nupkg.sha512",

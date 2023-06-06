@@ -13,54 +13,46 @@ namespace Cartera_movil
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainMenu : ContentPage
     {
-        private CarterasDeUsuario wallets;
+        private CarterasDeUsuario wallets= new CarterasDeUsuario();
         public MainMenu(string userName)
         {
             wallets.GetDataOfUser(userName);
-            Title = "Mis carteras";
+            InitializeComponent();
+            ReloadWallets();
+        }
 
-            Button[] buttons;
-            foreach(wallet )
-                x= new Button
+        private void ReloadWallets()
+        {
+            var myList = wallets.carteras; //your list here
+            carteras.Children.Clear(); //just in case so you can call this code several times np..
+            foreach (var item in myList)
             {
-                Text = "Click to Rotate Text!",
-                VerticalOptions = LayoutOptions.CenterAndExpand,
-                HorizontalOptions = LayoutOptions.Center
-            };
-            button.Clicked += async (sender, args) => await label.RelRotateTo(360, 1000);
+                var btn = new Button()
+                {
+                    Text = item.name + "  " + item.dinero.ToString(), //Whatever prop you wonna put as title;
+                    StyleId = item.name
+                };
+                btn.Clicked += ClickWallet;
+                carteras.Children.Add(btn);
+            }
+        }
 
-            Content = new StackLayout
+        private void ClickWallet(object sender, EventArgs e)
+        {
+            var myBtn = sender as Button;
+            var name = myBtn.StyleId;
+
+            return;
+        }
+        private async void CreateWallet(object sender, EventArgs e)
+        {
+            string result = await DisplayPromptAsync("Crear nueva cartera", "Introduce nombre de la nueva cartera");
+            if (!(result is null))
             {
-                Children =
-                {   
-                    label,
-                    button
-                }
-            };
-        }
-        private void CreateWallet(string name)
-        {
-            wallets.createWallet(name);
-        }
-
-        private void DeleteWallet(string name) 
-        {
-            wallets.deleteWallet(name);
-        }
-
-        private void MoneyDeposit(object sender, EventArgs e)
-        {
-            App.Current.MainPage = new MoneyDeposit(wallets.user);
-        }
-
-        private void TransferMoney(object sender, EventArgs e)
-        {
-            App.Current.MainPage = new TransferMoney(wallets.user);
-        }
-
-        private void WithdrawMoney(object sender, EventArgs e)
-        {
-            App.Current.MainPage = new WithdrawMoney(wallets.user);
+                wallets.createWallet(result);
+                wallets.saveDataOfUser();
+                ReloadWallets();
+            }
         }
     }
 }
