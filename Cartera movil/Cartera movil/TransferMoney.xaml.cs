@@ -17,7 +17,7 @@ namespace Cartera_movil
         public TransferMoney(string userName)
         {
             //TODO: recuperar carteras del usuario y ponerlo en carteras Alan
-            //TODO: mostrar las carteras con el dinero que tienen dentro
+            //TODO: mostrar las carteras con el dinero que tienen dentro Sebastian
             InitializeComponent();
         }
 
