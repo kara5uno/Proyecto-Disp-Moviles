@@ -10,17 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Cartera_movil
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainMenu : ContentPage
+    public partial class WithdrawMoney : ContentPage
     {
-        public MainMenu(string userName)
+        public WithdrawMoney()
         {
             InitializeComponent();
-            //TODO: mostrar las carteras con el dinero que tienen dentro
-        }
-
-        private void MoneyDeposit(object sender, EventArgs e)
-        {
-            App.Current.MainPage = new MoneyDeposit();
         }
     }
 }
