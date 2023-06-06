@@ -17,8 +17,26 @@ namespace Cartera_movil
         public MainMenu(string userName)
         {
             wallets.GetDataOfUser(userName);
-            //TODO: mostrar las carteras con el dinero que tienen dentro Sebastian
-            InitializeComponent();
+            Title = "Mis carteras";
+
+            Button[] buttons;
+            foreach(wallet )
+                x= new Button
+            {
+                Text = "Click to Rotate Text!",
+                VerticalOptions = LayoutOptions.CenterAndExpand,
+                HorizontalOptions = LayoutOptions.Center
+            };
+            button.Clicked += async (sender, args) => await label.RelRotateTo(360, 1000);
+
+            Content = new StackLayout
+            {
+                Children =
+                {   
+                    label,
+                    button
+                }
+            };
         }
         private void CreateWallet(string name)
         {

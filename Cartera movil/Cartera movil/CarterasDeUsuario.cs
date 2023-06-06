@@ -6,7 +6,7 @@ namespace Cartera_movil
 {
     internal class CarterasDeUsuario
     {
-        private Cartera[] carteras;
+        public Cartera[] carteras;
         public string user;
         public void AddMoney(string name, float money)
         {
