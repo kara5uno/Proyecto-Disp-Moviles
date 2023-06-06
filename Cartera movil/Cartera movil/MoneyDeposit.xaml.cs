@@ -12,8 +12,11 @@ namespace Cartera_movil
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MoneyDeposit : ContentPage
     {
+        private Cartera[] carteras;
+        private string user;
         public MoneyDeposit(string userName)
         {
+            //TODO: recuperar carteras del usuario y ponerlo en carteras Alan
             //TODO: mostrar las carteras con el dinero que tienen dentro
             InitializeComponent();
         }
