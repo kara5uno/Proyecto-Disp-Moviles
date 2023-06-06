@@ -17,7 +17,15 @@ namespace Cartera_movil
         public string user;
         public void AddMoney(string name, float money)
         {
-            //TODO agregar 'money'(posiblemente negativo) a la cartera con nombre 'name' ALAN
+            foreach (Cartera wallet in carteras)
+            {
+                if (wallet.name == name)
+                {
+                    wallet.dinero += money;
+                    break;
+                }
+            }
+            return;
         }
         public void GetDataOfUser(string userName)
         {
