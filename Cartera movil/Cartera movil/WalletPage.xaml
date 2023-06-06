@@ -3,25 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cartera_movil.WalletPage">
     <StackLayout>
-        <Button Text="Regresar" Clicked="Return"/>
-        <Label x:Name="carteraActual" Text="" />
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Entry x:Name="agregar"/>
-            <Button Grid.Row="0"
+        <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" >
+            <Button Text="Regresar" Clicked="Return" HorizontalOptions="FillAndExpand"/>
+            <Label x:Name="carteraActual" Text=""  HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" >
+            <Grid HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Entry Grid.Row="0" Grid.Column="0" x:Name="agregar"/>
+                <Button Grid.Row="0"
                Grid.Column="1"
                Text="Ingresar dinero"
                Clicked="EnterMoney"
                />
-        </Grid>
-        <ScrollView>
-            <StackLayout x:Name="carteras"/>
-        </ScrollView>
+                <Entry Grid.Row="1" Grid.Column="0" x:Name="retirar"/>
+                <Button Grid.Row="1"
+               Grid.Column="1"
+               Text="Retirar dinero"
+               Clicked="ExitMoney"
+               />
+            </Grid>
+            <Label Text="Transferir a otra cartera" HorizontalOptions="Center"/>
+            <ScrollView HorizontalOptions="FillAndExpand">
+                <StackLayout x:Name="carteras"/>
+            </ScrollView>
+        </StackLayout>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand">
+            <Button Text="Eliminar cartera" BackgroundColor="#EF0707"
+                    Clicked="DestroyWallet" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>

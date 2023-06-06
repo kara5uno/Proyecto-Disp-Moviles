@@ -20,7 +20,7 @@ namespace Cartera_movil
             wallet = walletName;
             InitializeComponent();
             ReloadWallets();
-            carteraActual.Text= wallet;
+            carteraActual.Text = wallet;
         }
         private void ReloadWallets()
         {
@@ -28,6 +28,10 @@ namespace Cartera_movil
             carteras.Children.Clear(); //just in case so you can call this code several times np..
             foreach (var item in myList)
             {
+                if(item.name==wallet)
+                {
+                    continue;
+                }
                 var btn = new Button()
                 {
                     Text = item.name + "  " + item.dinero.ToString(), //Whatever prop you wonna put as title;
@@ -37,11 +41,26 @@ namespace Cartera_movil
                 carteras.Children.Add(btn);
             }
         }
-        private void ClickWallet(object sender, EventArgs e)
+        private async void ClickWallet(object sender, EventArgs e)
         {
             var myBtn = sender as Button;
             var name = myBtn.StyleId;
+            string result = await DisplayPromptAsync("Introduce la cantidad a transferir", "");
+            wallets.AddMoney(name, (float)Convert.ToDouble(result));
+            wallets.AddMoney(wallet, -(float)Convert.ToDouble(result));
+            wallets.saveDataOfUser();
+            ReloadWallets();
             return;
+        }
+        private async void DestroyWallet(object sender, EventArgs e)
+        {
+            var result = await DisplayAlert("De verdad quieres eliminar esta cartera?", "No podras deshacer esta accion", "Si", "No");
+            if (result)
+            {
+                wallets.deleteWallet(wallet);
+                wallets.saveDataOfUser();
+                Return(sender,e);
+            }
         }
         private void Return(object sender, EventArgs e)
         {
@@ -52,6 +71,14 @@ namespace Cartera_movil
         {
             wallets.AddMoney(wallet,(float)Convert.ToDouble(agregar.Text));
             ReloadWallets();
+            wallets.saveDataOfUser();
+        }
+
+        private void ExitMoney(object sender, EventArgs e)
+        {
+            wallets.AddMoney(wallet, (float)Convert.ToDouble(retirar.Text));
+            ReloadWallets();
+            wallets.saveDataOfUser();
         }
     }
 }

@@ -2,20 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cartera_movil.MainMenu">
-    <ContentPage.Content>
-        <StackLayout  VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
-            <StackLayout Orientation="Horizontal" VerticalOptions="Start">
-                <Label Text="Estas son tus carteras" />
-            </StackLayout>
-            <StackLayout VerticalOptions="CenterAndExpand">
-                <ScrollView>
-                    <StackLayout x:Name="carteras"/>
-                </ScrollView>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="End">
-                <Button Text="+" BackgroundColor="#34B208"
-                    Clicked="CreateWallet" HorizontalOptions="FillAndExpand"/>
-            </StackLayout>
+    <StackLayout  VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+        <StackLayout VerticalOptions="Start">
+            <Label Text="Estas son tus carteras" HorizontalOptions="Center"/>
         </StackLayout>
-    </ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <ScrollView>
+                <StackLayout x:Name="carteras"/>
+            </ScrollView>
+        </StackLayout>
+        <StackLayout  HorizontalOptions="FillAndExpand" VerticalOptions="End">
+            <Button Text="+" BackgroundColor="#34B208"
+                    Clicked="CreateWallet" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>
