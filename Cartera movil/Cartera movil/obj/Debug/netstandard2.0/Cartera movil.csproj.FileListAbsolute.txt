@@ -31,9 +31,6 @@ C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\net
 C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\MainMenu.xaml.g.cs
 C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\MoneyDeposit.xaml.g.cs
-C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\TransferMoney.xaml.g.cs
-C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\WithdrawMoney.xaml.g.cs
 C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.AssemblyInfoInputs.cache
 C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.AssemblyInfo.cs
 C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.csproj.CoreCompileInputs.cache
@@ -42,3 +39,4 @@ C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\net
 C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\refint\Cartera movil.dll
 C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\Cartera movil.pdb
 C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\ref\Cartera movil.dll
+C:\Cartera movil\Proyecto-Disp-Moviles\Cartera movil\Cartera movil\obj\Debug\netstandard2.0\WalletPage.xaml.g.cs

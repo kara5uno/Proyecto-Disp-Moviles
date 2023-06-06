@@ -41,7 +41,7 @@ namespace Cartera_movil
         {
             var myBtn = sender as Button;
             var name = myBtn.StyleId;
-
+            App.Current.MainPage = new WalletPage(wallets.user,name);
             return;
         }
         private async void CreateWallet(object sender, EventArgs e)
@@ -49,7 +49,10 @@ namespace Cartera_movil
             string result = await DisplayPromptAsync("Crear nueva cartera", "Introduce nombre de la nueva cartera");
             if (!(result is null))
             {
-                wallets.createWallet(result);
+                if(! wallets.createWallet(result))
+                {
+                    await DisplayAlert("Cartera repetida", result, "ok");
+                }
                 wallets.saveDataOfUser();
                 ReloadWallets();
             }

@@ -11,8 +11,6 @@ namespace Cartera_movil
 {
     internal class CarterasDeUsuario
     {
-        //Para cosas raras de xamarin
-        private static Page page;
         public List<Cartera> carteras;
         public string user;
         public void AddMoney(string name, float money)
@@ -43,7 +41,7 @@ namespace Cartera_movil
         {
             //TODO guardar la informacion actual en la base de datos ALAN
         }
-        public async void createWallet(string name)
+        public bool createWallet(string name)
         {
             bool repetidos = false;
             foreach(Cartera wallet in carteras)
@@ -56,16 +54,35 @@ namespace Cartera_movil
             if (!repetidos)
             {
                 carteras.Add(new Cartera(name, 0.0f));
+                return true;
             }
             else
             {
-                await page.DisplayAlert("Nombre invalido", "Ya existe una cartera con ese nombre", "Ok");
+                return false;
             }
         }
-        public void deleteWallet(string name)
+        public bool deleteWallet(string name)
         {
-            //TODO eliminar la cartera con nombre 'name' ALAN
-            //Siempre se daran nombres validos
+            int position = -1;
+            int indx = 0;
+            foreach (Cartera wallet in carteras)
+            {
+                if (wallet.name == name)
+                {
+                    position = indx;
+                    break;
+                }
+                indx++;
+            }
+            if (position!=-1)
+            {
+                carteras.RemoveAt(position);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
