@@ -13,40 +13,36 @@ namespace Cartera_movil
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainMenu : ContentPage
     {
-        private Cartera[] carteras;
-        private string user;
+        private CarterasDeUsuario wallets;
         public MainMenu(string userName)
         {
-            //TODO: recuperar carteras del usuario y ponerlo en carteras Alan
-            
+            wallets.GetDataOfUser(userName);
             //TODO: mostrar las carteras con el dinero que tienen dentro Sebastian
             InitializeComponent();
-            user= userName;
         }
-
         private void CreateWallet(string name)
         {
-            //TODO Crear cartera con nombre 'name' ALAN
+            wallets.createWallet(name);
         }
 
         private void DeleteWallet(string name) 
         {
-            //TODO Destruir cartera con nombre 'name' ALAN
+            wallets.deleteWallet(name);
         }
 
         private void MoneyDeposit(object sender, EventArgs e)
         {
-            App.Current.MainPage = new MoneyDeposit(user);
+            App.Current.MainPage = new MoneyDeposit(wallets.user);
         }
 
         private void TransferMoney(object sender, EventArgs e)
         {
-            App.Current.MainPage = new TransferMoney(user);
+            App.Current.MainPage = new TransferMoney(wallets.user);
         }
 
         private void WithdrawMoney(object sender, EventArgs e)
         {
-            App.Current.MainPage = new WithdrawMoney(user);
+            App.Current.MainPage = new WithdrawMoney(wallets.user);
         }
     }
 }

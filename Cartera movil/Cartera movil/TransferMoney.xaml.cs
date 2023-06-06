@@ -12,18 +12,18 @@ namespace Cartera_movil
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TransferMoney : ContentPage
     {
-        private Cartera[] carteras;
-        private string user;
+        private CarterasDeUsuario wallets;
         public TransferMoney(string userName)
         {
-            //TODO: recuperar carteras del usuario y ponerlo en carteras Alan
-            //TODO: mostrar las carteras con el dinero que tienen dentro Sebastian
+            wallets.GetDataOfUser(userName);
+            //TODO: mostrar las carteras con el dinero que tienen dentro SEBASTIAN
             InitializeComponent();
         }
 
         private void Transfer(string name1, string name2, float money)
         {
-            //TODO transferir de 'name1' a 'name2' la cantidad 'money' ALAN
+            wallets.AddMoney(name1, -money);
+            wallets.AddMoney(name2, money);
         }
     }
 }

@@ -12,18 +12,17 @@ namespace Cartera_movil
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WithdrawMoney : ContentPage
     {
-        private Cartera[] carteras;
-        private string user;
+        private CarterasDeUsuario wallets;
         public WithdrawMoney(string userName)
         {
-            //TODO: recuperar carteras del usuario y ponerlo en carteras Alan
-            //TODO: mostrar las carteras con el dinero que tienen dentro
+            wallets.GetDataOfUser(userName);
+            //TODO: mostrar las carteras con el dinero que tienen dentro SEBASTIAN
             InitializeComponent();
         }
 
         private void Withdraw(string name, float money)
         {
-            //TODO ELiminat 'money' de cartera 'name' ALAN
+            wallets.AddMoney(name, -money);
         }
     }
 }
