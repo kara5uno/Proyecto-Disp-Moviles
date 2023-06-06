@@ -6,5 +6,9 @@
         <Label Text="Estas son tus carteras" />
         <Button Text="Ingresa dinero"
                 Clicked="MoneyDeposit" />
+        <Button Text="Gasta dinero"
+                Clicked="TransferMoney" />
+        <Button Text="Transfiere dinero entre tus carteras"
+                Clicked="WithdrawMoney" />
     </StackLayout>
 </ContentPage>

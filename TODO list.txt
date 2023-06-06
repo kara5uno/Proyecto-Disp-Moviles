@@ -1,1 +1,1 @@
-MainPage.xamlAgregar revision de usuario y contrasena
+MainPage.xamlAgregar revision de usuario y contrasena (Alan)MainMenu.xamlCrear lista de carteras(Sebastian)Leer carteras, crear cartera, destruir cartera (Alan)En los 3 .xaml mostrar las carteras(Sebastian)En los 3 .xaml terminar funcionalidades(Sebastian)En los 3 .xaml hacer funciones para mover dinero (Alan)
