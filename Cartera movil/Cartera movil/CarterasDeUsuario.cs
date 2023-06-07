@@ -84,5 +84,16 @@ namespace Cartera_movil
                 return false;
             }
         }
+        public float getMoney(string name)
+        {
+            foreach (Cartera wallet in carteras)
+            {
+                if (wallet.name == name)
+                {
+                    return wallet.dinero;
+                }
+            }
+            return 0;
+        }
     }
 }

@@ -67,6 +67,7 @@ namespace Cartera_movil
                 grd.Children.Add(btn, 0, 7, 0, 1);
                 carteras.Children.Add(grd);
             }
+            money.Text = "$" + wallets.getMoney(wallet).ToString();
         }
 
         private async void ClickWallet(object sender, EventArgs e)

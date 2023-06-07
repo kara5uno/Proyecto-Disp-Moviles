@@ -20,6 +20,7 @@
                    HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
         </Grid>
         <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" >
+            <Label x:Name="money" Text="" HorizontalOptions="CenterAndExpand" FontSize="Header"/>
             <Grid HorizontalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
