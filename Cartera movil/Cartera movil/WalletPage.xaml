@@ -5,17 +5,18 @@
     <StackLayout  BackgroundColor="#2F7E0D">
         <Grid VerticalOptions="Start" BackgroundColor="#1F65C3" HeightRequest="66" HorizontalOptions="FillAndExpand" >
             <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
                 <RowDefinition Height="44" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="66" />
+                <ColumnDefinition Width="44" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <ImageButton Source="https://cdn-icons-png.flaticon.com/512/339/339867.png" Grid.Row="0" Grid.Column="0" 
+            <ImageButton Source="https://cdn-icons-png.flaticon.com/512/339/339867.png" Grid.Row="1" Grid.Column="0" 
                     Clicked="Return" HorizontalOptions="FillAndExpand" BackgroundColor="#1F65C3"
                     />
-            <Label x:Name="carteraActual" Grid.RowSpan="2"  Grid.ColumnSpan="2" TextColor="White" FontSize="Large"
+            <Label x:Name="carteraActual" Grid.RowSpan="3"  Grid.ColumnSpan="2" TextColor="White" FontSize="Large"
                    HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
         </Grid>
         <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" >
