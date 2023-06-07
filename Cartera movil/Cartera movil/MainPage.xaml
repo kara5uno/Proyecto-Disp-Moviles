@@ -3,12 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cartera_movil.MainPage">
 
-    <StackLayout>
-        <Label Text="MiCartera Digital"/>
-        <Label Text="Inicie Sesion"/>
-        <Entry x:Name="userName" Placeholder="Introduce tu nombre de usuario" />
-        <Entry x:Name="password" Placeholder="Introduce tu contraseña" IsPassword="true" FontFamily="Password" />
-        <Button Text="Inicia Sesion" Clicked="OnButtonClicked" />
+    <StackLayout  BackgroundColor="#2F7E0D">
+        <StackLayout VerticalOptions="Start" HeightRequest="88">
+            <Label Text="MiCartera Digital" FontSize="Large"
+                   HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Entry x:Name="userName" Placeholder="Introduce tu nombre de usuario" />
+            <Entry x:Name="password" Placeholder="Introduce tu contraseña" IsPassword="true" FontFamily="Password" />
+            <Button Text="Inicia Sesion" Clicked="OnButtonClicked" VerticalOptions="End" 
+                    HorizontalOptions="CenterAndExpand" BackgroundColor="#1F65C3"/>
+        </StackLayout>
+        <StackLayout  HorizontalOptions="Fill" VerticalOptions="EndAndExpand" HeightRequest="22">
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
