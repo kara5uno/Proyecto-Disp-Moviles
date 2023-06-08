@@ -48,7 +48,7 @@ namespace Cartera_movil
                 };
                 Button btn = new Button
                 {
-                    StyleId = item.name,
+                    StyleId = item.User,
                     VerticalOptions = LayoutOptions.FillAndExpand,
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     BackgroundColor = Color.FromRgba(0, 0, 0, 0),
@@ -56,12 +56,12 @@ namespace Cartera_movil
                 btn.Clicked += ClickWallet;
                 grd.Children.Add(new Label
                 {
-                    Text = item.name,
+                    Text = item.User,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                 }, 1, 4, 0, 1); ;
                 grd.Children.Add(new Label
                 {
-                    Text = "$" + item.dinero.ToString(),
+                    Text = "$" + item.Dinero.ToString(),
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                 }, 5, 6, 0, 1);
                 grd.Children.Add(btn, 0, 7, 0, 1);
@@ -77,7 +77,6 @@ namespace Cartera_movil
             string result = await DisplayPromptAsync("Introduce la cantidad a transferir", "");
             wallets.AddMoney(name, (float)Convert.ToDouble(result));
             wallets.AddMoney(wallet, -(float)Convert.ToDouble(result));
-            wallets.saveDataOfUser();
             ReloadWallets();
             return;
         }
@@ -87,7 +86,6 @@ namespace Cartera_movil
             if (result)
             {
                 wallets.deleteWallet(wallet);
-                wallets.saveDataOfUser();
                 Return(sender,e);
             }
         }
@@ -100,14 +98,12 @@ namespace Cartera_movil
         {
             wallets.AddMoney(wallet,(float)Convert.ToDouble(agregar.Text));
             ReloadWallets();
-            wallets.saveDataOfUser();
         }
 
         private void ExitMoney(object sender, EventArgs e)
         {
             wallets.AddMoney(wallet, (float)Convert.ToDouble(retirar.Text));
             ReloadWallets();
-            wallets.saveDataOfUser();
         }
     }
 }

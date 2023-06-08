@@ -6,91 +6,93 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using System.Net.Http;
+using Cartera_movil.Models;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Cartera_movil
 {
     internal class CarterasDeUsuario
     {
-        public List<Cartera> carteras;
+        public List<Cartera> carteras = new List<Cartera>();
         public string user;
-        public void AddMoney(string name, float money)
+        HttpClient client = new HttpClient();
+        string URL = "https://carteramovil2023.azurewebsites.net/api/carteras";
+        public async void AddMoney(string name, float money)
         {
             foreach (Cartera wallet in carteras)
             {
-                if (wallet.name == name)
+                if (wallet.Name == name)
                 {
-                    wallet.dinero += money;
+                    wallet.Dinero += money;
+
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(wallet), Encoding.UTF8, "application/json");
+
+                    await client.PutAsync(URL, content);
+
                     break;
                 }
             }
             return;
         }
-        public void GetDataOfUser(string userName)
+        public async void GetDataOfUser(string userName)
         {
-            //PlaceHolder
+            /*    //PlaceHolder
+                var resultado = await client.GetAsync(URL);
+
+                var json = resultado.Content.ReadAsStringAsync().Result;
+
+                carteras = Cartera.FromJson(json);
+
+                carteras.RemoveAll(x => x.Name != userName);
+            */
+
             user = "Prueba";
             carteras = new List<Cartera>();
-            carteras.Add(new Cartera("comida",5.0f));
-            carteras.Add(new Cartera("escuela", 5.0f));
-            carteras.Add(new Cartera("transporte", 5.0f));
-            carteras.Add(new Cartera("servicios", 5.0f));
-            carteras.Add(new Cartera("monas chinas", 50.0f));
-            //TODO Obtener la informacion de la base de datos del userName ALAN
+            carteras.Add(new Cartera());
+            carteras.Add(new Cartera());
+
         }
-        public void saveDataOfUser()
-        {
-            //TODO guardar la informacion actual en la base de datos ALAN
-        }
-        public bool createWallet(string name)
+        public async void createWallet(string name)
         {
             bool repetidos = false;
             foreach(Cartera wallet in carteras)
             {
-                if(wallet.name==name)
+                if(wallet.Name==name)
                 {
                     repetidos = true;
                 }
             }
             if (!repetidos)
             {
-                carteras.Add(new Cartera(name, 0.0f));
-                return true;
-            }
-            else
-            {
-                return false;
+                Cartera wall= new Cartera();
+                
+                wall.Name = name;
+                
+                StringContent content = new StringContent(JsonConvert.SerializeObject(wall), Encoding.UTF8, "application/json");
+                
+                await client.PostAsync(URL, content);
             }
         }
-        public bool deleteWallet(string name)
+        public async void deleteWallet(string name)
         {
-            int position = -1;
-            int indx = 0;
             foreach (Cartera wallet in carteras)
             {
-                if (wallet.name == name)
+                if (wallet.Name == name)
                 {
-                    position = indx;
+                    await client.DeleteAsync(URL + "/" + wallet.Id.ToString());
                     break;
                 }
-                indx++;
-            }
-            if (position!=-1)
-            {
-                carteras.RemoveAt(position);
-                return true;
-            }
-            else
-            {
-                return false;
             }
         }
         public float getMoney(string name)
         {
             foreach (Cartera wallet in carteras)
             {
-                if (wallet.name == name)
+                if (wallet.Name == name)
                 {
-                    return wallet.dinero;
+                    return wallet.Dinero;
                 }
             }
             return 0;

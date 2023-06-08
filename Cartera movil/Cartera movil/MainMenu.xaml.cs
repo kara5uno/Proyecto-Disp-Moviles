@@ -47,7 +47,7 @@ namespace Cartera_movil
                 };
                 Button btn = new Button
                 {
-                    StyleId = item.name,
+                    StyleId = item.User,
                     VerticalOptions = LayoutOptions.FillAndExpand,
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     BackgroundColor = Color.FromRgba(0, 0 , 0, 0),
@@ -55,12 +55,12 @@ namespace Cartera_movil
                 btn.Clicked += ClickWallet;
                 grd.Children.Add(new Label
                 {
-                    Text = item.name,
+                    Text = item.User,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                 }, 1, 4, 0, 1); ;
                 grd.Children.Add(new Label
                 {
-                    Text = "$"+item.dinero.ToString(),
+                    Text = "$"+item.Dinero.ToString(),
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                 }, 5, 6, 0, 1);
                 grd.Children.Add(btn, 0, 7, 0, 1);
@@ -80,11 +80,15 @@ namespace Cartera_movil
             string result = await DisplayPromptAsync("Crear nueva cartera", "Introduce nombre de la nueva cartera");
             if (!(result is null))
             {
-                if(! wallets.createWallet(result))
+                foreach (var item in wallets.carteras)
                 {
-                    await DisplayAlert("Cartera repetida", result, "ok");
+                    if (item.Name == result)
+                    {
+                        await DisplayAlert("Cartera repetida", result, "ok");
+                        break;
+                    }
                 }
-                wallets.saveDataOfUser();
+                wallets.createWallet(result);
                 ReloadWallets();
             }
         }
